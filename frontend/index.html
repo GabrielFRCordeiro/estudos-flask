@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Sistema de CRUD</h1>
+    <form id="userForm">
+        <input type="text" name="nome" placeholder="Nome" id="name" required>
+        <input type="email" name="email" placeholder="E-Mail" id="email" required>
+        <input type="number" name="age" placeholder="Idade" id="age" required>
+        <button type="submit">Cadastro</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>E-Mail</th>
+                <th>Idade</th>
+                <th>Botões</th>
+            </tr>
+        </thead>
+        <tbody id="userTable"></tbody>
+    </table>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
