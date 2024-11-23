@@ -9,11 +9,22 @@
 </head>
 <body>
     <h1>Sistema de CRUD</h1>
+
+    <!-- Formulario de criacao de usuario -->
     <form id="userForm">
-        <input type="text" name="nome" placeholder="Nome" id="name" required>
-        <input type="email" name="email" placeholder="E-Mail" id="email" required>
-        <input type="number" name="age" placeholder="Idade" id="age" required>
-        <button type="submit">Cadastro</button>
+        <input type="text" placeholder="Nome" id="name" required>
+        <input type="email" placeholder="E-Mail" id="email" required>
+        <input type="number" placeholder="Idade" id="age" required>
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <!-- Formulario para atualizar usuario -->
+    <form id="updateForm" style="display: none;">
+        <input type="hidden" id="updateId">
+        <input type="text" id="updateName" placeholder="Name" required>
+        <input type="email" id="updateEmail" placeholder="Email" required>
+        <input type="number" id="updateAge" placeholder="Age" required>
+        <button type="submit">Atualizar</button>
     </form>
 
     <table>
